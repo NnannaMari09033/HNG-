@@ -3,7 +3,7 @@ services:
     name: HNG1
     env: python3
     buildCommand: "pip install -r requirements.txt && python manage.py migrate"
-    startCommand: "gunicorn myproject.wsgi:application"
+    startCommand: "gunicorn HNG1.wsgi:application"
     envVars:
       - key: 'django-insecure-#z3dy)q0qnl14ksrm6b@zdo3#bc43^5v^!unll_n1)p60i$%1('
         sync: false
